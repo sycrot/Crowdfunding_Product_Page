@@ -64,7 +64,9 @@ p {
     padding: 3vmax;
     border-radius: 5vmax;
     font-weight: 500;
-
+}
+.text__title {
+    margin-bottom: 3vmax;
 }
 /* PROJECT */
 .project {
@@ -74,7 +76,6 @@ p {
     margin-top: -10vmax;
 }
 .project__title {
-    margin: 3vmax 0;
     font-size: 18px;
     padding: 0 5vmax;
 }
@@ -96,7 +97,68 @@ p {
 
 /* MONITOR */
 .monitor__art {
-    height: 15vh;
+    height: 12vh;
+    margin-bottom: 2vmax;
+}
+.monitor__art hr {
+    width: 12vmax;
+    margin-top: 3vmax;
+    margin-left: 35%;
+}
+.monitor__graphic {
+    background-color: #f0f0f0;
+    height: 2vh;
+    border-radius: 10vmax;
+}
+.graphic__ {
+    background-color: hsl(176, 50%, 47%);
+    height: 2vh;
+    border-radius: 10vmax;
+    width: 80%;
+}
+
+/* ABOUT */
+.about__container {
+    text-align: left;
+}
+.about__title {
+    margin-top: 2vmax;
+}
+.about__article__reward {
+    margin-top: 5vmax;
+    padding: 3vmax;
+    border: 1px solid hsl(0, 0%, 76%);
+    border-radius: 1vmax;
+}
+.about__article__reward p {
+    line-height: 1.5;
+}
+.about__article__pledge {
+    color:hsl(176, 50%, 47%);
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 1vmax;
+}
+.about__article__actions {
+    margin-top: 3vmax;
+}
+.about__article__actions small {
+    font-weight: 400;
+    color:hsl(0, 0%, 48%);
+    font-size: 14px;
+}
+.about__article__button {
+    margin-top: 3vmax;
+    width: 30vmax;
+}
+.about__article_disabled {
+    color:hsl(0, 0%, 48%);
+}
+.about__article_disabled .about__article__button {
+    background-color: hsl(0, 0%, 72%);
+}
+.about__article_disabled .about__article__pledge {
+    color:hsl(175, 31%, 69%);
 }
 
 /* SELECTION MODAL */
