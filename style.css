@@ -1,0 +1,108 @@
+* {margin: 0; padding: 0; font-family: Commissioner; box-sizing: border-box;}
+body {
+    background: hsl(0, 0%, 90%);
+}
+p {
+    color: hsl(0, 0%, 48%);
+    font-size: 14px;
+}
+/* HEADER */
+.header {
+    width: 100%;
+    height: 50vmax;
+    background-image: url(./images/image-hero-mobile.jpg);
+    background-position: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 4vmax;
+}
+.header__logo {
+    float: left;
+}
+.header__buttonMenu {
+    float: right;
+    border: none;
+    background: none;
+    padding: 1vmax 0;
+}
+.header__nav {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+.header__nav__ul {
+    background: #fff;
+    margin-top: 10vmax;
+    border-radius: 3vmax;
+}
+.header__nav__li {
+    list-style-type: none;
+    font-weight: 500;
+    padding: 4vmax 2vmax;
+    text-align: left;
+}
+.header__nav__li:nth-child(1), .header__nav__li:nth-child(2) {
+    border-bottom: 1px solid rgb(238, 237, 237);
+}
+
+/*  */
+.container {
+    background: #fff;
+    border-radius: 1.5vmax;
+    padding: 3vmax;
+    box-sizing: border-box;
+}
+.section-container {
+    position: relative;
+    padding: 2vmax 4vmax;
+    text-align: center;
+}
+.button_default {
+    border: none;
+    background: hsl(176, 50%, 47%);
+    color: white;
+    padding: 3vmax;
+    border-radius: 5vmax;
+    font-weight: 500;
+
+}
+/* PROJECT */
+.project {
+    margin-top: -18vmax;
+}
+.project__img {
+    margin-top: -10vmax;
+}
+.project__title {
+    margin: 3vmax 0;
+    font-size: 18px;
+    padding: 0 5vmax;
+}
+.project__actions {
+    margin-top: 3vmax;
+    width: 100%;
+}
+.project__btnBack {
+    width: 75%;
+    float: left;
+    height: 10vh;
+}
+.project__bookmark {
+    width: 20%;
+    height: 10vh;
+    border: none;
+    background: none;
+}
+
+/* MONITOR */
+.monitor__art {
+    height: 15vh;
+}
+
+/* SELECTION MODAL */
+.modal {
+    display: none;
+}
+.modal_completed {
+    display: none;
+}
