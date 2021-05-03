@@ -23,9 +23,9 @@
     <button class="header__buttonMenu"><img src="images/icon-hamburger.svg" alt="Open/Close Menu"></button>
     <nav class="header__nav">
       <ul class="header__nav__ul">
-        <li class="header__nav__li">About</li>
-        <li class="header__nav__li">Discover</li>
-        <li class="header__nav__li">Get Started</li>
+        <li class="header__nav__li"><a href="#">About</a></li>
+        <li class="header__nav__li"><a href="#">Discover</a></li>
+        <li class="header__nav__li"><a href="#">Get Started</a></li>
       </ul>
     </nav>
   </header>
@@ -42,28 +42,36 @@
       </p>
       <div class="project__actions">
         <button class="project__btnBack button_default">Back this project</button>
-        <button class="project__bookmark"><img src="images/icon-bookmark.svg" alt="bookmark"></button>
+        <button class="project__bookmark">
+          <img src="images/icon-bookmark.svg" alt="bookmark">
+          <p>Bookmark</p>
+        </button>
       </div>
     </div>
   </section>
   
   <section class="monitor section-container ">
     <div class="monitor__container container">
-      <div class="monitor__totalMoney monitor__art">
-        <h1>$89,914</h1>
-        <p>of $100,000 backed</p>
-        <hr>
-      </div>
-      
-      <div class="monitor__totalBackers monitor__art">
-        <h1>5,007</h1>
-        <p>total backers</p>
-        <hr>
-      </div>
-  
-      <div class="monitor__daysLeft monitor__art">
-        <h1>56</h1>
-        <p>56 days left</p>
+      <div class="monitor__container_arts">
+        <div class="monitor__totalMoney monitor__art">
+          <h1>$89,914</h1>
+          <p>of $100,000 backed</p>
+          
+        </div>
+        <div class="monitor__line"></div>
+        
+        
+        <div class="monitor__totalBackers monitor__art">
+          <h1>5,007</h1>
+          <p>total backers</p>
+          
+        </div>
+        <div class="monitor__line"></div>
+    
+        <div class="monitor__daysLeft monitor__art">
+          <h1>56</h1>
+          <p>56 days left</p>
+        </div>
       </div>
 
       <div class="monitor__graphic monitor__art">
@@ -88,7 +96,7 @@
       </p>
       <article class="about__article__reward">
         <div class="about__article__titlePledge text__title">
-          <h4>Bamboo Stand</h4>
+          <h4 class="about__article__title">Bamboo Stand</h4>
           <h4 class="about__article__pledge">Pledge $25 or more</h4>
         </div>
         <p>
@@ -103,7 +111,7 @@
   
       <article class="about__article__reward">
         <div class="about__article__titlePledge text__title">
-          <h4>Black Edition Stand</h4>
+          <h4 class="about__article__title">Black Edition Stand</h4>
           <h4 class="about__article__pledge">Pledge $75 or more</h4>
         </div>
         <p>
@@ -118,7 +126,7 @@
   
       <article class="about__article__reward about__article_disabled">
         <div class="about__article__titlePledge text__title">
-          <h4>Mahogany Special Edition</h4>
+          <h4 class="about__article__title">Mahogany Special Edition</h4>
           <h4 class="about__article__pledge">Pledge $200 or more</h4>
         </div>
         <p>
@@ -137,88 +145,105 @@
   <!-- Selection modal start -->
 
   <div class="modal">
-    <h1>
-      Back this project
-    </h1>
-    <p>
-      Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
-    </p>
-    <article class="modal__article">
-      <div class="modal__article__title">
-        <input type="checkbox">
-        <h2>Pledge with no reward</h2>
-      </div>
-      <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
-      you will be signed up to receive product updates via email.
+    <div class="container modal_container">
+      <h2 class="modal__title-modal">
+        Back this project
+        <img class="modal_close" src="images/icon-close-modal.svg" alt="close modal">
+      </h2>
+      <p>
+        Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
       </p>
-    </article>
-
-    <article class="modal__article">
-      <div class="modal__article__title">
-        <input type="checkbox">
-        <h2>Bamboo Stand</h2>
-        <h2>Pledge $25 or more</h2>
-      </div>
-      <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-        you’ll be added to a special Backer member list.
-      </p>
-      <h2>101 <small>left</small></h2>
-
-      <div class="modal__article__pledge">
-        <p>Enter your pledge</p>
-        <div class="ma__pledge__actions">
-          <h2>$25</h2>
-          <button>Continue</button>
+      <article class="about__article__reward">
+        <div class="about__article__titlePledge text__title">
+          <input type="radio" class="check_modal">
+          <div class="modal__art_title">
+            <h2 class="modal-title about__article__title">Pledge with no reward</h2>
+          </div>
         </div>
-      </div>
-    </article>
-
-    <article class="modal__article">
-      <div class="modal__article__title">
-        <input type="checkbox">
-        <h2>Black Edition Stand</h2>
-        <h2>Pledge $75 or more</h2>
-      </div>
-      <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-        member list. Shipping is included.
-      </p>
-      <h2>64 <small>left</small></h2>
-
-      <div class="modal__article__pledge">
-        <p>Enter your pledge</p>
-        <div class="ma__pledge__actions">
-          <h2>$75</h2>
-          <button>Continue</button>
+        <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
+        you will be signed up to receive product updates via email.
+        </p>
+      </article>
+  
+      <article class="about__article__reward">
+        <div class="about__article__titlePledge text__title">
+          <input type="radio" class="check_modal">
+          <div class="modal__art_title">
+            <h2 class="modal-title about__article__title">Bamboo Stand</h2>
+            <h2 class="about__article__pledge">Pledge $25 or more</h2>
+          </div>
+          
         </div>
-      </div>
-    </article>
-
-    <article class="modal__article">
-      <div class="modal__article__title">
-        <input type="checkbox">
-        <h2>Mahogany Special Edition</h2>
-        <h2>Pledge $200 or more</h2>
-      </div>
-      <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
-        to our Backer member list. Shipping is included.
-      </p>
-      <h2>0 <small>left</small></h2>
-
-      <div class="modal__article__pledge">
-        <p>Enter your pledge</p>
-        <div class="ma__pledge__actions">
-          <h2>$200</h2>
-          <button>Continue</button>
+        <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+          you’ll be added to a special Backer member list.
+        </p>
+        <h2 class="modal__pledge">101 <small>left</small></h2>
+        <hr>
+        <div class="modal__article__pledge">
+          <p>Enter your pledge</p>
+          <div class="ma__pledge__actions">
+            <h2 class="modal__price"><small>$</small>25</h2>
+            <button class="button_default modal__button">Continue</button>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+  
+      <article class="about__article__reward">
+        <div class="about__article__titlePledge text__title">
+          <input type="radio" class="check_modal">
+          <div class="modal__art_title">
+            <h2 class="modal-title about__article__title">Black Edition Stand</h2>
+            <h2 class="about__article__pledge">Pledge $75 or more</h2>
+          </div>
+          
+        </div>
+        <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+          member list. Shipping is included.
+        </p>
+        <h2 class="modal__pledge">64 <small>left</small></h2>
+        <hr>
+        <div class="modal__article__pledge">
+          <p>Enter your pledge</p>
+          <div class="ma__pledge__actions">
+            <h2 class="modal__price"><small>$</small>75</h2>
+            <button class="button_default modal__button">Continue</button>
+          </div>
+        </div>
+      </article>
+  
+      <article class="about__article__reward">
+        <div class="about__article__titlePledge text__title">
+          <input type="radio" class="check_modal">
+          <div class="modal__art_title">
+            <h2 class="modal-title about__article__title">Mahogany Special Edition</h2>
+            <h2 class="about__article__pledge">Pledge $200 or more</h2>
+          </div>
+          
+        </div>
+        <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+          to our Backer member list. Shipping is included.
+        </p>
+        <h2 class="modal__pledge">0 <small>left</small></h2>
+        <hr>
+        <div class="modal__article__pledge">
+          <p>Enter your pledge</p>
+          <div class="ma__pledge__actions">
+            <h2 class="modal__price"><small>$</small>200</h2>
+            <button class="button_default modal__button">Continue</button>
+          </div>
+        </div>
+      </article>
+    </div>
   </div>
 
-  <div class="modal_completed">
-    <h1>Thanks for your support!</h1>
-    <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
-      an email once our campaign is completed.</p>
-    <button>Got it!</button>
+  <div class="modal modal_completed">
+    <div class="container modal_completed__container">
+      <img src="images/icon-check.svg" alt="check">
+      <h2 class="text__title">Thanks for your support!</h2>
+      <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+        an email once our campaign is completed.</p>
+      <button class="button_default modal_button">Got it!</button>
+    </div>
   </div>
 </body>
 </html>
