@@ -167,7 +167,7 @@
   
       <article class="about__article__reward">
         <div class="about__article__titlePledge text__title">
-          <input type="radio" class="check_modal">
+          <input type="radio" class="check_modal" checked>
           <div class="modal__art_title">
             <h2 class="modal-title about__article__title">Bamboo Stand</h2>
             <h2 class="about__article__pledge">Pledge $25 or more</h2>
@@ -178,12 +178,14 @@
           you’ll be added to a special Backer member list.
         </p>
         <h2 class="modal__pledge">101 <small>left</small></h2>
-        <hr>
-        <div class="modal__article__pledge">
-          <p>Enter your pledge</p>
-          <div class="ma__pledge__actions">
-            <h2 class="modal__price"><small>$</small>25</h2>
-            <button class="button_default modal__button">Continue</button>
+        <div class="modal__enterpledge">
+          <hr>
+          <div class="modal__article__pledge">
+            <p>Enter your pledge</p>
+            <div class="ma__pledge__actions">
+              <h2 class="modal__price"><small>$</small><input type="number" value="25"></h2>
+              <button class="button_default modal__button">Continue</button>
+            </div>
           </div>
         </div>
       </article>
@@ -201,17 +203,20 @@
           member list. Shipping is included.
         </p>
         <h2 class="modal__pledge">64 <small>left</small></h2>
-        <hr>
-        <div class="modal__article__pledge">
-          <p>Enter your pledge</p>
-          <div class="ma__pledge__actions">
-            <h2 class="modal__price"><small>$</small>75</h2>
-            <button class="button_default modal__button">Continue</button>
+        <div class="modal__enterpledge">
+          <hr>
+          <div class="modal__article__pledge">
+            <p>Enter your pledge</p>
+            <div class="ma__pledge__actions">
+              <h2 class="modal__price"><small>$</small><input type="number" value="75"></h2>
+              <button class="button_default modal__button">Continue</button>
+            </div>
           </div>
         </div>
+        
       </article>
   
-      <article class="about__article__reward">
+      <article class="about__article__reward about__article_disabled">
         <div class="about__article__titlePledge text__title">
           <input type="radio" class="check_modal">
           <div class="modal__art_title">
@@ -224,14 +229,17 @@
           to our Backer member list. Shipping is included.
         </p>
         <h2 class="modal__pledge">0 <small>left</small></h2>
-        <hr>
-        <div class="modal__article__pledge">
-          <p>Enter your pledge</p>
-          <div class="ma__pledge__actions">
-            <h2 class="modal__price"><small>$</small>200</h2>
-            <button class="button_default modal__button">Continue</button>
+        <!-- <div class="modal__enterpledge">
+          <hr>
+          <div class="modal__article__pledge">
+            <p>Enter your pledge</p>
+            <div class="ma__pledge__actions">
+              <h2 class="modal__price"><small>$</small><input type="number" value="200"></h2>
+              <button class="button_default modal__button">Continue</button>
+            </div>
           </div>
-        </div>
+        </div> -->
+        
       </article>
     </div>
   </div>
