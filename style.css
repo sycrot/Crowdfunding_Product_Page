@@ -15,7 +15,6 @@ p {
     background-position: cover;
     background-size: 100%;
     background-repeat: no-repeat;
-    padding: 4vmax;
 }
 .header__logo {
     float: left;
@@ -27,11 +26,14 @@ p {
     padding: 1vmax 0;
 }
 .header__nav {
+    padding: 4vmax;
+    height: 90vmax;
+    position: relative;
+}
+.header__nav__ul {
     display: none;
     width: 100%;
     text-align: center;
-}
-.header__nav__ul {
     background: #fff;
     margin-top: 10vmax;
     border-radius: 3vmax;
@@ -45,6 +47,7 @@ p {
 .header__nav__li a {
     text-decoration: none;
     color: #000;
+    
 }
 .header__nav__li:nth-child(1), .header__nav__li:nth-child(2) {
     border-bottom: 1px solid rgb(238, 237, 237);
@@ -78,6 +81,7 @@ p {
 /* PROJECT */
 .project {
     margin-top: -18vmax;
+    display: block;
 }
 .project__img {
     margin-top: -10vmax;
@@ -104,6 +108,9 @@ p {
 }
 .project__bookmark p {
     font-size: 0;
+}
+.project__bookmark__button {
+    fill:#147b74;
 }
 
 /* MONITOR */
@@ -231,7 +238,7 @@ p {
     margin-left: 2vmax;
 }
 .modal__pledge {
-    margin-top: 4vmax;
+    margin: 4vmax 0 3vmax 0;
     font-size: 16px;
     padding: 0 3vmax;
 }
@@ -285,16 +292,21 @@ input[type=number] {
 .modal__button {
     width: 48%;
 }
+.modal__enterpledge {
+    display: none;
+    z-index: 7;
+}
 
 
 /* MODAL COMPLETED */
 .modal_completed {
     display: none;
+    position: fixed;
 }
 .modal_completed__container {
     height: 55vmax;
     text-align: center;
-    margin-top: calc(50% - 5vmax);
+    margin-top: calc(50% - 35vmax);
 }
 .modal_completed__container img {
     margin-bottom: 2vmax;
@@ -319,12 +331,16 @@ input[type=number] {
     .header__nav {
         display: block;
         float: right;
-        width: 40%;
+        width: 100%;
+        position: inherit;
+        z-index: 0;
+        height: auto;
     }
     .header__nav__ul {
         background: transparent;
         margin-top: 0;
         border-radius: 0;
+        text-align: right;
     }
     .header__nav__li {
         padding: 0;
